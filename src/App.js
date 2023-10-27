@@ -1,21 +1,25 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 
 import Root from "./pages/Root";
 import CountryPage from "./pages/CountryPage";
 import CountryList from "./pages/CountryList";
 import CountryItemPage from "./pages/CountryItemPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/",
+    path: "/*",
     element: <Root />,
     children: [
       {
-        path: "/",
+        path: "/*",
         element: <CountryPage />,
         children: [{ index: true, element: <CountryList /> }],
       },
-      { path: "/:name", element: <CountryItemPage /> },
+      { path: "/*:name", element: <CountryItemPage /> },
     ],
   },
 ]);
