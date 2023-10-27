@@ -1,0 +1,117 @@
+.filtercontainersection {
+  padding-inline: 80px;
+  margin-bottom: 48px;
+}
+
+.container {
+  max-width: 1920px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filtercontainersection {
+    padding-inline: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.searchForm input {
+  width: 480px;
+  height: 56px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.0532);
+  border-radius: 5px;
+  padding-left: 74px;
+}
+
+.filterContainer {
+  width: 200px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.0532);
+  padding-left: 24px;
+  font: var(--font-14-Regular);
+  line-height: 20px;
+}
+
+.filterContainer > ul {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  z-index: 10;
+  transform: translateY(100%);
+  list-style-type: none;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.0532);
+  padding-block: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filterContainer > ul > li {
+  padding-left: 24px;
+}
+
+@media (max-width: 1024px) {
+  .container > form:nth-child(1) {
+    width: 100%;
+  }
+  .searchForm > input {
+    width: 100%;
+    height: 48px;
+  }
+
+  .filterContainer {
+    height: 48px;
+
+    padding-left: 24px;
+    font: var(--font-12-Regular);
+    line-height: 16px;
+  }
+}
+
+/* .filterForm {
+  position: relative;
+}
+
+.filterForm select {
+  width: 200px;
+  height: 56px;
+  outline: none;
+  border: none;
+  padding-left: 24px;
+  position: relative;
+
+  /* margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+}
+
+/* .filterForm::after {
+  content: "\2193";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+} */

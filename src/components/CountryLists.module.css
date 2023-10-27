@@ -1,0 +1,31 @@
+.countrySection {
+  padding-inline: 80px;
+}
+
+.container {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.countrySection ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 75px;
+}
+
+@media (max-width: 1440px) {
+  .countrySection ul {
+    gap: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .countrySection {
+    padding-inline: 55px;
+  }
+  .countrySection ul {
+    justify-content: center;
+  }
+}

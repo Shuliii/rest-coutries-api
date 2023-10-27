@@ -1,0 +1,46 @@
+.countryItem {
+  width: 264px;
+  height: 336px;
+
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0px 7px 2px rgba(0, 0, 0, 0.0294);
+}
+.countryItem > a {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 160px 1fr;
+  text-decoration: none;
+}
+
+.imgContainer > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.descriptionContainer {
+  padding-inline: 24px;
+  padding-block: 24px 46px;
+}
+
+.descriptionContainer > h2 {
+  font: var(--font-18-ExtraBold);
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description > p {
+  font: var(--font-14-SemiBold);
+}
+
+.description > p > span {
+  font: var(--font-14-Regular);
+}

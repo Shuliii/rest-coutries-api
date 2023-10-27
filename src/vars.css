@@ -1,0 +1,11 @@
+:root {
+  --font-32-ExtraBold: 800 32px "Nunito Sans";
+  --font-24-ExtraBold: 800 24px "Nunito Sans";
+  --font-18-ExtraBold: 800 18px "Nunito Sans";
+  --font-16-SemiBold: 600 16px "Nunito Sans";
+  --font-16-Regular: 300 16px "Nunito Sans";
+  --font-14-SemiBold: 600 14px "Nunito Sans";
+  --font-14-Regular: 300 14px "Nunito Sans";
+
+  --font-12-Regular: 300 12px "Nunito Sans";
+}
