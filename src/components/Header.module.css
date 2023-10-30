@@ -24,6 +24,10 @@
   font: var(--font-16-SemiBold);
 }
 
+.container > div:nth-child(2) {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .header {
     padding-inline: 16px;

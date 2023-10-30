@@ -48,6 +48,7 @@
   padding-left: 24px;
   font: var(--font-14-Regular);
   line-height: 20px;
+  cursor: pointer;
 }
 
 .filterContainer > ul {
