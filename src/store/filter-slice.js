@@ -37,7 +37,7 @@ const filterSlice = createSlice({
       state.filter = "Filter by Region";
       state.search = action.payload.name;
       state.countries = data.filter((item) =>
-        item.name.toLowerCase().includes(state.search)
+        item.name.toLowerCase().includes(state.search.toLocaleLowerCase())
       );
       console.log(state.countries);
     },
